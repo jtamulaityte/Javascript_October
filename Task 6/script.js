@@ -32,18 +32,23 @@ let avg = getUserAverageAge(users);
 console.log(avg)
 
 ///naujas array su vardais
-function getUsersNames() {
-  let namesArray = [];
-  for (let i=0; i<users.length; i++) {
-    namesArray.push(users[i].name);
-  }
-  return namesArray;
-}
-console.log(getUsersNames());
+// function getUsersNames(data) {
+//   let namesArray = [];
+//   for (let i=0; i<data.length; i++) {
+//     namesArray.push(data[i].name);
+//   }
+//   return namesArray;
+// }
+// console.log(getUsersNames(users));
 
 
 // let usersNames = users.map(function getUsersNames(item) {
 //   return item.name;
 // })
 // console.log(usersNames)
+
+function getUsersNames(arg) {
+  return console.log(arg.map((userName) => userName.name))
+}
+getUsersNames(users)
 
