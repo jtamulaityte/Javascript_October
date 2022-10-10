@@ -34,6 +34,7 @@ filterDogOwners();
 
 //2. filter pilnameciai
 console.log("Filtered adults:\n")
+
 let filterAdults = users.filter(function (eachElement) {
   return eachElement.age >= 18;
 });

@@ -19,3 +19,31 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+function getUserAverageAge(users){
+  let sum = 0;
+  for (let i in users) {
+    sum += users[i].age;
+  }
+  let numbersCnt = users.length;
+  return (sum/numbersCnt);
+}
+let avg = getUserAverageAge(users);
+console.log(avg)
+
+///naujas array su vardais
+function getUsersNames() {
+  let namesArray = [];
+  for (let i=0; i<users.length; i++) {
+    namesArray.push(users[i].name);
+  }
+  return namesArray;
+}
+console.log(getUsersNames());
+
+
+// let usersNames = users.map(function getUsersNames(item) {
+//   return item.name;
+// })
+// console.log(usersNames)
+

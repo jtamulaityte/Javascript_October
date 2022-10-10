@@ -29,8 +29,7 @@ function showUsers() {
             card.appendChild(userCard)
             userCard.innerText += "login:" + " " + data[i].login + "\n";
             userCard.innerText += "avatra_url:" + " " + data[i].avatar_url + "\n"
-            // document.getElementsByClassName("userCard").style = "padding: 10px 10px; border: 3px solid orange; background-color: yellow; color: green"
         }
     })
-    console.log(showUsers)
 }
+
