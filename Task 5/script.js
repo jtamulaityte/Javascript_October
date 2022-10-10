@@ -21,21 +21,18 @@ const users = [
 ];
 
 //1. Dog Owners
-function filterDogOwners() {
-  for(let i=0; i < users.length; i++) {
-    if (users[i].hasDog) {
-      console.log(users[i].name)
-    }
-  }
-};
-
+let filteredDogOwners = users.filter(filterDogOwners)
+function filterDogOwners(users) {
+  return users.hasDog
+}
 console.log("Filtered dog owners:\n")
-filterDogOwners();
+console.log(filteredDogOwners)
 
 //2. filter pilnameciai
 console.log("Filtered adults:\n")
 
-let filterAdults = users.filter(function (eachElement) {
-  return eachElement.age >= 18;
-});
-console.log(filterAdults);
+let adults = users.filter(filterAdults)
+function filterAdults(users) {
+  return users.age >=18
+}
+console.log(adults)
